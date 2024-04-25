@@ -1,0 +1,212 @@
+* {
+    font-family: Verdana;
+    text-align: center;
+    color: burlywood;
+}
+
+h1 h2 {
+    font-weight: bolder;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: ColorChange 15s ease infinite;
+}
+
+.dados a {
+    display: block;
+    text-align: center;
+    color: darkcyan;
+    margin: 10px auto;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.dados a:hover {
+    color: #7dce14;
+
+}
+
+.dados img {
+    width: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 700px;
+    background-color: #17032e;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2em 1em -0.7em;
+}
+
+
+
+.top-bar {
+    height: 100px;
+    margin: 0;
+    background-color: #333;
+    padding: 25px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-color: #161515;
+    width: 100%;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: burlywood;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+}
+
+li a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+/*.top-bar h1 {
+    margin: 0;
+    
+    padding-bottom: 15px;
+
+}*/
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+a:link {
+    color: burlywood;
+}
+
+a:visited {
+    color: burlywood;
+}
+
+a:hover {
+    color: black;
+}
+
+@keyframes ColorChange {
+    0% {
+        background-color: black;
+    }
+
+    15% {
+        background-color: #17032e;
+    }
+
+    25% {
+        background-color: darkslategray;
+    }
+
+    50% {
+        background-color: darkslateblue;
+    }
+
+    75% {
+        background-color: darkblue;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+#menu {
+    /*display: inline-block;
+    position: fixed;*/
+    height: 100px;
+    margin: 0;
+    padding: 100px 0;
+    /*text-align: center;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Estilize os itens do menu */
+#menu ul {
+
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilize os links */
+#menu ul li a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+#menu ul li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* Efeito ao passar o mouse sobre o menu */
+#menu ul li:hover ul {
+    display: block;
+    color: black;
+
+}
+
+/* Estilize o submenu */
+#menu ul li ul {
+    width: auto;
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    background-color: #252522;
+    ;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#menu ul li ul li {
+    display: block;
+    margin: 5px 0;
+    max-width: 500px;
+}
