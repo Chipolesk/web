@@ -12,3 +12,8 @@ function site3() {
 function adm() {
     window.location.href = ' https://mail.google.com/mail/?view=cm&fs=1&to=danielchipolesk@gmail.com'
 }
+function site4() {
+   /* window.location.href = ''
+   */
+    alert("AINDA NAO HOSPEDADO");
+}
